@@ -11,6 +11,7 @@
       ansible.builtin.debug:
         msg: "The hostname is {{ ansible_net_hostname }} and the OS is {{ ansible_net_version }}"
 
+    # I have changed something here
     - name: Update the hostname
       cisco.ios.ios_config:
         lines:
